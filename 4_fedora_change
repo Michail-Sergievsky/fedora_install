@@ -1,0 +1,62 @@
+#!/bin/bash
+# **urxvt**
+
+#vim
+# to vimrc
+if has('unnamedplus')
+  set clipboard=unnamed,unnamedplus
+endif
+
+set nobackup
+set noswapfile
+set undofile " Maintain undo history
+set undodir=~/.vim/undodir
+set undolevels=1000      " Maximum number of changes that can be undone
+set undoreload=10000
+
+set vb "disable beep sound
+
+set guioptions-=m  "remove menu bar
+set guioptions-=T  "remove toolbar
+set guioptions-=r  "remove right-hand scroll bar
+set guioptions-=L  "remove left-hand scroll bar
+
+
+# bash_profile
+alias vim='gvim -v'
+export EDITOR="gvim -v"
+export VISUAL="$EDITOR"
+
+# bashrc
+# change fzf
+source /usr/share/fzf/shell/key-bindings.bash
+source /usr/share/fzf/shell/completion.bash
++   add completion.bash
+
+# vifm
+add to vifm as "gvim -v"
+mcomix3
+
+# i3wm
+exec --no-startup-id $term -name dropdown_notes -e gvim -v
+bindsym $mod+F2 exec --no-startup-id $term -name dropdown_notes -e gvim -v
+display layout
+launch programs
+
+# git conf
+git config --global user.name "Michail-Sergievsky"
+git config --global user.email "mikhail.sergiev@gmail.com"
+
+# ssh for github
+ssh-keygen -t ed25519 -C "mikhail.sergiev@gmail.com"
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_ed25519
+
+#polybar
+change wlan
+add battary
+
+# i3wm
+flatpak run chat.rocket.RocketChat
+flatpak run org.telegram.desktop
+flatpak run com.dropbox.Client
