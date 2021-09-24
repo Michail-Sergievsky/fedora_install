@@ -60,3 +60,6 @@ add battary
 flatpak run chat.rocket.RocketChat
 flatpak run org.telegram.desktop
 flatpak run com.dropbox.Client
+
+#hostname
+hostnamectl set-hostname new-name
