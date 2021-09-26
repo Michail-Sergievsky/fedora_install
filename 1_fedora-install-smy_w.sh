@@ -55,3 +55,6 @@ sudo dnf install -y exiv2 hunspell hunspell-en hunspell-ru hyphen hyphen-en hyph
 # sudo dnf install -y python-vlc (optional)
 
 sudo systemctl enable sshd
+sudo systemctl enable cups.service
+
+
