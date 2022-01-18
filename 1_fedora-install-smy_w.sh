@@ -2,7 +2,7 @@
 
 # system
 sudo dnf install -y arandr atool autoconf cmake dhcpcd feh flameshot fzf htop i3 i3blocks lsscsi neofetch openvpn papirus-icon-theme picom polybar qalculate redshift rofi rxvt-unicode simple-mtpfs speedtest-cli task timew tldr udiskie unzip vifm vim-X11 w3m xclip
-suod dnf install -y unrar
+sudo dnf install -y unrar
 
 pip install tasklib
 
