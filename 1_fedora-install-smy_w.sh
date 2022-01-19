@@ -1,10 +1,9 @@
 #!/bin/bash
 
 # system
-sudo dnf install -y arandr atool autoconf cmake dhcpcd feh flameshot fzf htop i3 i3blocks lsscsi neofetch openvpn papirus-icon-theme picom polybar qalculate redshift rofi rxvt-unicode simple-mtpfs speedtest-cli task timew tldr udiskie unzip vifm vim-X11 w3m xclip
-sudo dnf install -y unrar
+sudo dnf install -y arandr atool autoconf cmake dhcpcd feh flameshot fzf goldendict htop i3 i3blocks lsscsi neofetch openvpn papirus-icon-theme picom polybar qalculate redshift rofi rxvt-unicode simple-mtpfs speedtest-cli task timew tldr udiskie unzip vifm vim-X11 w3m xclip
 
-pip install tasklib
+# pip install tasklib
 
 # via flatpak
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
@@ -53,7 +52,8 @@ sudo dnf install -y exiv2 hunspell hunspell-en hunspell-ru hyphen hyphen-en hyph
 # sudo dnf install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
 # sudo dnf install https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 # sudo dnf install -y vlc
-# sudo dnf install -y python-vlc (optional)
+
+sudo dnf install -y unrar
 
 sudo systemctl enable sshd
 sudo systemctl enable cups.service
