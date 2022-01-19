@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # system
-sudo dnf install -y arandr atool autoconf cmake dhcpcd feh flameshot fzf goldendict htop i3 i3blocks lsscsi neofetch openvpn papirus-icon-theme picom polybar qalculate redshift rofi rxvt-unicode simple-mtpfs speedtest-cli task timew tldr udiskie unzip vifm vim-X11 w3m xclip
+sudo dnf install -y arandr atool autoconf cmake dhcpcd feh flameshot ffmpeg fzf goldendict htop i3 i3blocks lsscsi neofetch openvpn papirus-icon-theme picom polybar qalculate redshift rofi rxvt-unicode simple-mtpfs speedtest-cli task timew tldr udiskie unzip vifm vim-X11 w3m xclip
 
 # pip install tasklib
 
